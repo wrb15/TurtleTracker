@@ -5,6 +5,8 @@
 # Created by: Willa Brooks (willa.brooks@duke.edu)
 # Created on: Sept, 2018
 
+try:
+    
 # Create a variable pointing to the file with no header
 fileName = "SaraNoHeader.txt"
 
@@ -67,3 +69,6 @@ else:
         theLat = theLocation[0]
         theLon = theLocation[1]
         print("Record {0}: Sara was see at {1}N-{2}W, on {3}".format(k,theLat,theLon,theDate))
+
+except Exception as e:
+    print(e)   
